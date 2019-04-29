@@ -8,7 +8,8 @@
 * type `cd projectname`
 * type `composer install`
 * type `composer update`
-* type `php artisan key:generate`to regenerate secure key
+* copy *.env.example* to *.env*
+* type `php artisan key:generate`to generate secure key in *.env* file
 * if you use MySQL in *.env* file :
    * set DB_CONNECTION
    * set DB_DATABASE
@@ -45,7 +46,7 @@
 * Contact us page
 * Admin dashboard with users, posts, articles, medias, settings, notifications and comments
 * Multi users medias gestion
-* Localization
+* Localization (English, French and Chinese)
 * Application tests
 * Thumbs creation for images
 * Notifications to send emails and notify redactors for new comments
@@ -65,6 +66,10 @@ When you want to launch the tests refresh and populate the database :
 
 `php artisan migrate:fresh --seed`
 
-You must have default settings and en language.
+You must have default settings and **en** language. You must also add provider in **config/app.php**.
 
 You can then use Dusk.
+
+### License ###
+
+This example for Laravel is open-sourced software licensed under the MIT license
